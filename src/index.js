@@ -6,6 +6,8 @@ import menu from './menu.js';
 import contact from './contact.js';
 import home from './home.js';
 
+
+
 function component() {
     const element = document.querySelector('#content');
     const navBar = document.querySelector('#navbar');
@@ -14,6 +16,7 @@ function component() {
     //create home button to change content to home
     const homeBtn = document.createElement('button');
     homeBtn.innerHTML = "HOME";
+    homeBtn.classList.add('homecolor');
     homeBtn.addEventListener('click', home);
     navBar.appendChild(homeBtn);
     home();//initialize home page
@@ -23,12 +26,14 @@ function component() {
     const menuBtn = document.createElement('button');
     menuBtn.innerHTML = "MENU";
     menuBtn.addEventListener("click", menu);
+    menuBtn.classList.add('menucolor');
   
    navBar.appendChild(menuBtn);
     //create contact buton to change #content to contact
     
     const contactBtn = document.createElement("button");
     contactBtn.innerHTML = "Contact Us";
+    contactBtn.classList.add('contactcolor');
     contactBtn.addEventListener('click', contact);
    navBar.appendChild(contactBtn);
 

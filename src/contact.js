@@ -1,3 +1,7 @@
 export default function contact() {
-    console.log("click me to go to contact tab");
+    const element =document.querySelector("#content");
+    element.innerHTML = '';
+    element.classList.remove('menucolor');
+    element.classList.remove('homecolor');
+    element.classList.add('contactcolor');
 }
