@@ -10,6 +10,13 @@
     padding: 0;
     margin: 0;
   }
+
+  header > h1 {
+    border: 10px double black;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFFBF4;
+  }
   body {
     background-color: white;
     display: grid;
@@ -68,6 +75,7 @@
     height: 50px;
     width: 100px;
     margin-top: 100px;
+    font-weight: bold;
     
 }
 
@@ -100,6 +108,21 @@
   border: 6px double black;
   border-radius: 7px;
   padding: 10px;
-  width: 150px;
+  width: 200px;
   text-align: center;
+  background-color: white;
+}
+
+
+.pricetoright {
+  float: right;
+}
+
+footer {
+  background-color: #FFE5B9;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
